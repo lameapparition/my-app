@@ -1,5 +1,23 @@
+.App {
+  text-align: center;
+  display:grid;
+  grid-template-areas: 
+  "header"
+  "main"
+  "footer";
+  gap: 20px;
+  height: 100vh;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-left: 20%;
+  margin-right: 20%;
+  grid-template-rows: 50px auto 100px;
+  grid-template-columns: 1fr;
+}
+
 .main {
-  padding: 20px;
+  height: max-content;
+  padding: 10px;
   background-color: orangered;
   grid-area: main;
   display: grid;
@@ -20,23 +38,6 @@
   grid-area: header;
   /* z-index: 100;
   position: fixed; */
-}
-
-.App {
-  text-align: center;
-  display:grid;
-  grid-template-areas: 
-  "header"
-  "main"
-  "footer";
-  grid-gap: 10px;
-  height: 100vh;
-  margin-top: 100px;
-  margin-bottom: 100px;
-  margin-left: 20%;
-  margin-right: 20%;
-  grid-template-rows: 50px auto 100px;
-  grid-template-columns: 1fr;
 }
 
 .App-logo {
