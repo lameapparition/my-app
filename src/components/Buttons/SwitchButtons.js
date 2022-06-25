@@ -1,11 +1,12 @@
-import React,{useState} from 'react' 
+import React from 'react' 
 import './SwitchButtons.css'
 
-export default function SwitchButtons() {
+export default function SwitchButtons(props) {
+
     return (
         <>
-            <div className='bttn left'/>
-            <div className='bttn right'/>
+            <div onClick={props.switchLeft} className='bttn left'/>
+            <div onClick={props.switchRight} className='bttn right'/>
         </>
 
     )
