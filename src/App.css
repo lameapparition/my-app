@@ -1,5 +1,42 @@
+.main {
+  padding: 20px;
+  background-color: orangered;
+  grid-area: main;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-auto-rows: 200px;
+  grid-gap: 10px;
+}
+
+.footer {
+  padding: 20px;
+  background-color: darkcyan;
+  grid-area: footer;
+}
+
+.header {
+  padding: 20px;
+  background: orange;
+  grid-area: header;
+  /* z-index: 100;
+  position: fixed; */
+}
+
 .App {
   text-align: center;
+  display:grid;
+  grid-template-areas: 
+  "header"
+  "main"
+  "footer";
+  grid-gap: 10px;
+  height: 100vh;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-left: 20%;
+  margin-right: 20%;
+  grid-template-rows: 50px auto 100px;
+  grid-template-columns: 1fr;
 }
 
 .App-logo {
